@@ -1,0 +1,9 @@
+{
+  "name": "process-triage",
+  "version": "0.1.0",
+  "description": "Rank business process steps: plain code, LLM, or keep the human",
+  "type": "module",
+  "bin": { "process-triage": "src/cli.mjs" },
+  "scripts": { "test": "node --test test/" },
+  "license": "MIT"
+}

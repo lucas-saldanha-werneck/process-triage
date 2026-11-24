@@ -1,0 +1,13 @@
+{
+  "title": "EXAMPLE DATA (invented): accounts-payable process of a fictional company",
+  "steps": [
+    {"name": "Read supplier invoices from email PDFs", "runs_per_week": 120, "minutes_per_run": 4, "input": "unstructured", "rules_clear": false, "needs_judgment": false, "error_cost": "high"},
+    {"name": "Match invoice to purchase order", "runs_per_week": 120, "minutes_per_run": 3, "input": "structured", "rules_clear": true, "needs_judgment": false, "error_cost": "medium"},
+    {"name": "Check VAT number format", "runs_per_week": 120, "minutes_per_run": 1, "input": "structured", "rules_clear": true, "needs_judgment": false, "error_cost": "low"},
+    {"name": "Answer supplier questions about payment dates", "runs_per_week": 40, "minutes_per_run": 6, "input": "unstructured", "rules_clear": false, "needs_judgment": false, "error_cost": "low"},
+    {"name": "Approve invoices above the limit", "runs_per_week": 15, "minutes_per_run": 10, "input": "semi", "rules_clear": false, "needs_judgment": true, "error_cost": "high"},
+    {"name": "Classify expense into ledger account", "runs_per_week": 120, "minutes_per_run": 2, "input": "semi", "rules_clear": false, "needs_judgment": false, "error_cost": "medium"},
+    {"name": "Post entry to the ERP", "runs_per_week": 120, "minutes_per_run": 2, "input": "structured", "rules_clear": true, "needs_judgment": false, "error_cost": "medium"},
+    {"name": "Handle disputed invoices", "runs_per_week": 8, "minutes_per_run": 30, "input": "unstructured", "rules_clear": false, "needs_judgment": true, "error_cost": "high"}
+  ]
+}
