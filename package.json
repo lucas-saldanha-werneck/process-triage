@@ -4,6 +4,6 @@
   "description": "Rank business process steps: plain code, LLM, or keep the human",
   "type": "module",
   "bin": { "process-triage": "src/cli.mjs" },
-  "scripts": { "test": "node --test test/" },
+  "scripts": { "test": "node --test test/*.test.mjs" },
   "license": "MIT"
 }
